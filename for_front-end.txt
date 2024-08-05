@@ -1,4 +1,4 @@
-Favor não mecher na pasta do envolviment (venv)
+Favor não mexer na pasta do envolviment (venv)
 
 Quando ler, apague este arquivo. 
 
