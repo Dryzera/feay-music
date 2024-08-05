@@ -1,0 +1,3 @@
+Favor não mecher na pasta do envolviment (venv)
+
+Obrigado!
