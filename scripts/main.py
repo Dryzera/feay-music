@@ -29,7 +29,7 @@ class CorrectNote:
         return note
 
     def make_image(self):
-        return self.notes_dict[self._index]
+        return str(self.notes_dict[self._index]) + '.png'
         
 
 correct_answer, url_image = CorrectNote(MUSIC_NOTES, DICT_NOTES).return_class
@@ -41,12 +41,15 @@ def group_answers(answer, notes: list[str]):
 
     while flag_while_group_answers:
         incorrect_answers = random.sample(notes, 2)
-
+        """
+        Cria um grupo de respostas e embaralha para ser repassado ao html
+        """
         if correct not in incorrect_answers:
             flag_while_group_answers = False
-            group_answer = (correct, *incorrect_answers)
-            print('grupo de respostas: ', group_answer, 'correta: ', correct)
-            # embaralhar grupo de respostas
+            group_answer = [correct, *incorrect_answers]
+            random.shuffle(group_answer)
+            group_answer_tuple = tuple(group_answer) 
+            print('grupo de respostas: ', group_answer_tuple, 'correta: ', correct)
             return group_answer
             
 
