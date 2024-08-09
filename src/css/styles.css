@@ -1,0 +1,151 @@
+
+
+body {
+    font-family: 'outfit';
+    margin: 0;
+    padding: 0;
+    background-color: #E2E2E7;;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+
+.title {
+    flex-grow: 1;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-actions span {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.user-actions img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
+}
+
+.center-text {
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.center-image {
+    width: 400px;
+    height: auto;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.choice-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.choice-box input {
+    margin-right: 5px;
+    
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+    align-items: end;
+    margin-right: 20px;
+}
+
+.footer-item-licoes, .footer-item-home {
+    display: inline;
+    padding: 0 1em;
+    
+}
+
+.footer-item-licoes {
+    text-decoration: underline;
+    padding-left: 1em;
+    color: #615f5f;
+}
+
+.footer-item img {
+    margin-right: 8px;
+    width: 28px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section img {
+    margin-right: 8px;
+    width: 28px;
+}
