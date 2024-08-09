@@ -103,6 +103,10 @@ main {
     background-color: #f9f9f9;
 }
 
+.choice-box input:hover {
+    background-color: #d1caca;
+}
+
 .choice-box label {
     display: none;
 }
