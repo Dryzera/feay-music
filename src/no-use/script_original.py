@@ -55,6 +55,3 @@ def group_answers(answer, notes: list[str]):
 
 group_answer = group_answers(correct_answer, MUSIC_NOTES)
 
-def html_utils(group_answer, url_image):
-    # repassa todas as utils para o html
-    ...
