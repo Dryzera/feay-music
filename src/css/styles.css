@@ -16,6 +16,11 @@ header {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .title {
     flex-grow: 1;
