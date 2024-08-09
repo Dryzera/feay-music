@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const [correctAnswer, urlImage] = new CorrectNote(MUSIC_NOTES, DICT_NOTES).returnClass;
 
-    // Função para gerar as respostas (com embaralhamento)
     function groupAnswers(answer, notes) {
         let correct = answer;
         let flagWhileGroupAnswers = true;
@@ -61,30 +60,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const groupAnswer = groupAnswers(correctAnswer, MUSIC_NOTES);
 
-    // Atualizar o HTML com as respostas geradas
     document.getElementById('note_1').value = groupAnswer[0];
     document.getElementById('note_2').value = groupAnswer[1];
     document.getElementById('note_3').value = groupAnswer[2];
 
     document.getElementById('noteImage').src = urlImage;
 
-    document.querySelectorAll('input[type="submit"]').forEach(function(button, index) {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Previne o comportamento padrão de submit do formulário
+    document.querySelectorAll('input[type="submit"]').forEach((button, index) => {
+        button.addEventListener('click', event => {
+            event.preventDefault(); 
 
-            const userAnswer = document.querySelector(`#note_${index + 1} + label`).innerText;
+            const userAnswer = document.getElementById(`note_${index + 1}`).value;
 
             if (userAnswer === correctAnswer) {
-                document.body.style.backgroundColor = '#67C862';
-                setTimeout(() => {
-                    window.location.reload(true);
-                }, 2000)
+                document.body.style.backgroundColor = '#67C862'; 
             } else {
-                document.body.style.backgroundColor = '#E13737';
-                setTimeout(() => {
-                    window.location.reload(true);
-                }, 2000)
+                document.body.style.backgroundColor = '#E13737'; 
             }
+
+            setTimeout(() => {
+                window.location.reload();
+            }, 2000);
         });
     });
 });
