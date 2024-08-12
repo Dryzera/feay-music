@@ -1,4 +1,7 @@
-
+main {
+    display: grid;
+    grid-column: 33%;
+}
 
 
 
