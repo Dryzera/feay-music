@@ -1,8 +1,39 @@
-main {
-    display: grid;
-    grid-column: 33%;
+.title-page {
+    text-align: center;
+    font-size: 50px;
 }
 
+.title-page img {
+    width: 600px;;
+}
+
+main {
+    margin: 1em;
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+}
+
+main section {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: #b4b4b4;
+}
+
+.ref-licoes {
+    color: blue;
+    text-decoration: underline;
+}
+
+.hard-skills {
+    text-align: center;
+}
+
+.image-hard{
+    display: inline-flex;
+    width: 600px;
+
+}
 
 
 /* deixe isso por ultimo */
